@@ -40,6 +40,10 @@ li {
   flex: 1;
 }
 
+.container {
+  padding: 50px 0;
+}
+
 .row {
   width: 100%;
   max-width: 800px;
@@ -48,6 +52,14 @@ li {
 
 .text--purple {
   color: blue;
+}
+
+section:nth-child(even) {
+  background-color: #f8f8f8;
+}
+
+.section__title {
+  margin-bottom: 20px;
 }
 
 /* Navigation Bar */
@@ -156,4 +168,11 @@ nav {
 
 .about-me__img{
   width: 100%;
+}
+
+/* Tech -Stack */
+
+.language__img {
+  width: 100%;
+  max-width: 100pxgi
 }
