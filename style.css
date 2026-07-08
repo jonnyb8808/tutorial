@@ -218,8 +218,19 @@ nav {
   opacity: 1;
 }
 
+/*PROJECTS */
+
+.project {
+  margin-bottom: 135px;
+}
+
+.project:last-child {
+  margin-bottom: 40px;
+}
+
 .project__img{
   width: 100%;
+  transition: all 450ms ease;
 }
 
 .project__wrapper {
@@ -243,6 +254,11 @@ nav {
   z-index: 2;
 }
 
+.project:hover .project__description {
+  opacity: 1;
+  transform: translateY(-50%);
+}
+
 .project:hover .project__wrapper:before {
   opacity: 0.7;
 }
@@ -259,9 +275,25 @@ nav {
   position: absolute;
   top: 50%;
   left: 90px;
-  transform: translateY(-50%);
+  transform: translateY(100%);
   max-width: 550px;
   z-index: 10;
+  opacity: 0;
+  transition: transform 450ms, opacity 300ms ease;
+}
+
+.project__description--title {
+  font-size: 40px;
+}
+
+.project__description--para {
+  margin: 16px 0;
+}
+
+.project__description--links {
+  font-size: 20px;
+  margin-right: 16px;
+  text-decoration: none;
 }
 
 .project__description--title,
